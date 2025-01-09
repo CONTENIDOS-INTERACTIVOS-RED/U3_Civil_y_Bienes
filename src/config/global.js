@@ -1,7 +1,7 @@
 export default {
   global: {
-    numeroUnidad: '2',
-    tituloUnidad: 'Derechos reales y usufructo',
+    numeroUnidad: '3',
+    tituloUnidad: 'Transferencia y protección de los bienes',
   },
   menuPrincipal: {
     menu: [
@@ -15,21 +15,26 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Derechos reales',
+        titulo: 'Transferencia y protección de bienes',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Propiedad y posesión',
+            titulo: 'Tradición',
             hash: 't_1_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo:
-              'Posesión y propiedad inmueble: una relación compleja y necesaria',
+            titulo: 'Ocupación',
             hash: 't_1_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.3',
+            titulo: 'Accesión',
+            hash: 't_1_3',
           },
         ],
       },
@@ -37,14 +42,21 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Usufructo',
+        titulo: 'Prescripción',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Servidumbres: constitución y extinción',
+        titulo: 'Contratos traslativos de dominio',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'tema4',
+        icono: 'far fa-file-alt',
+        numero: '4',
+        titulo: 'Acción reivindicatoria',
         desarrolloContenidos: true,
       },
       {
@@ -85,109 +97,110 @@ export default {
   referencias: [
     {
       referencia:
-        'Clemente Meoro, M. (2016). Cuaderno V: derechos reales limitados de goce. Dykinson.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/63073 ',
+        'Larrea Holguín, J. (2008). Manual elemental de Derecho Civil 3. Volumen 4: del dominio o propiedad, modos de adquirir y el fideicomiso. Corporación de Estudios y Publicaciones. ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/115047 ',
     },
     {
       referencia:
-        'Santillán Santa Cruz, R. V. (2011). ¿Puede vulnerarse la libertad de tránsito del propietario del predio sirviente al no permitírsele circular por una servidumbre de paso constituida sobre su predio a favor de otro? Comentario a la STC Exp. Nº 02006-2011-PHC/TC. Revista de Investigación Jur. Red Universidad Católica Santo Toribio de Mogrovejo. ',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/28010 ',
+        'Luna Serrano, A., Sancho Rebullida, F. D. A. & Lacruz Berdejo, J. L. (2016). Elementos de derecho civil III: derechos reales. Volumen primero: posesión y propiedad (2 ed.). Dykinson. ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/34261 ',
     },
     {
-      referencia: 'Rogel Vide, C. (2015). La nuda propiedad. Editorial Reus. ',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/46602 ',
+      referencia:
+        'Torres Lana, J. Á. (2015). Cuaderno I: introducción al estudio de los derechos reales, la posesión. Dykinson. ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/61008 ',
     },
   ],
   glosario: [
     {
-      termino: 'Accesoriedad',
+      termino: 'Accesión',
       significado:
-        'Característica de ciertos derechos reales, como las servidumbres, que están vinculados a los bienes (predios) y no a las personas, permaneciendo inalterados aunque cambie el propietario.',
+        'Modo originario de adquirir el dominio mediante la incorporación de un bien accesorio a uno principal, ya sea de manera natural o artificial.',
     },
     {
-      termino: 'Bienes',
+      termino: 'Acción posesoria',
       significado:
-        'Todo aquello que puede ser objeto de apropiación y que satisface necesidades humanas, clasificándose en muebles, inmuebles, tangibles o intangibles.',
+        'Mecanismo jurídico para proteger la posesión de un bien frente a perturbaciones o despojos, sin requerir la demostración de propiedad.',
     },
     {
-      termino: 'Código Civil Colombiano',
+      termino: 'Acción reivindicatoria',
       significado:
-        'Conjunto de normas que regula las relaciones jurídicas entre personas y bienes en Colombia, incluyendo derechos reales como la propiedad, posesión, usufructo y servidumbres.',
+        'Herramienta legal que permite al propietario legítimo reclamar la restitución de un bien en posesión de un tercero.',
     },
     {
-      termino: 'Confusión',
+      termino: 'Capacidad jurídica',
       significado:
-        'Extinción de una servidumbre cuando el predio dominante y el predio sirviente pasan a ser propiedad de la misma persona.',
+        'Aptitud legal de las personas para ser sujetos activos o pasivos de relaciones jurídicas y celebrar actos legales válidos.',
     },
     {
-      termino: 'Derechos reales',
+      termino: 'Código Civil',
       significado:
-        'Derechos que otorgan a una persona un poder directo e inmediato sobre un bien, como la propiedad, la posesión, el usufructo y las servidumbres.',
+        'Conjunto normativo que regula las relaciones entre particulares, incluyendo los derechos reales y la transferencia de bienes en Colombia.',
     },
     {
-      termino: 'Función social de la propiedad',
+      termino: 'Compraventa',
       significado:
-        'Limitación legal al derecho de propiedad que exige que su uso beneficie no solo al propietario sino también a la sociedad, regulado en el Artículo 58 de la constitución de Colombia.',
+        'Contrato traslativo de dominio en el que una parte (vendedor) transfiere la propiedad de un bien a otra (comprador) a cambio de un precio',
     },
     {
-      termino: 'Indivisibilidad',
+      termino: 'Dominio',
       significado:
-        'Propiedad de ciertos derechos, como las servidumbres, que no pueden dividirse en su ejercicio, beneficiando al predio dominante en su totalidad.',
+        'Derecho pleno que confiere a su titular la facultad de usar, gozar y disponer de un bien, dentro de los límites establecidos por la Ley.',
     },
     {
-      termino: 'Nudo propietario',
+      termino: 'Donación',
       significado:
-        'Propietario de un bien gravado con un usufructo, que conserva la titularidad pero no el derecho al uso y disfrute durante la vigencia del usufructo.',
+        'Contrato mediante el cual una persona transfiere gratuitamente la propiedad de un bien a otra.',
     },
     {
-      termino: 'Prescripción adquisitiva',
+      termino: 'Justo título',
       significado:
-        'Mecanismo legal mediante el cual una persona adquiere la propiedad de un bien tras poseerlo de manera pacífica, continua y pública durante un tiempo determinado.',
+        'Documento o acto legal que confiere apariencia de derecho al poseedor de un bien y que puede servir como base para la prescripción ordinaria.',
     },
     {
-      termino: 'Propiedad',
+      termino: 'Mutuo',
       significado:
-        'Derecho real que otorga a su titular el uso, goce y disposición de un bien, limitado por la ley y el respeto a los derechos de terceros.',
+        'Contrato en el que una persona entrega bienes fungibles, como dinero, a otra, quien se compromete a devolver bienes de la misma especie y cantidad.',
+    },
+    {
+      termino: 'Ocupación',
+      significado:
+        'Modo originario de adquirir el dominio de bienes que no tienen propietario, conocidos como bienes vacantes o mostrencos.',
+    },
+    {
+      termino: 'Permuta',
+      significado:
+        'Contrato traslativo de dominio que consiste en el intercambio de bienes entre dos partes sin que intervenga dinero como contraprestación principal.',
     },
     {
       termino: 'Posesión',
       significado:
-        'Tenencia de un bien con ánimo de señor y dueño, aunque no se cuente con un título legal que respalde la propiedad.',
+        'Tenencia de un bien con ánimo de propietario, que puede ser protegida por acciones posesorias en caso de perturbación o despojo.',
     },
     {
-      termino: 'Predio dominante',
+      termino: 'Prescripción adquisitiva',
       significado:
-        'Bien inmueble que se beneficia de una servidumbre, como el derecho de paso sobre un predio vecino.',
+        'Mecanismo legal que permite adquirir el dominio de un bien mediante la posesión prolongada, pacífica, pública y continua.',
     },
     {
-      termino: 'Predio sirviente',
+      termino: '<em>Res Nullius</em>',
       significado:
-        'Bien inmueble que soporta una servidumbre, como permitir el paso de vehículos o personas de un predio dominante.',
+        'Bienes que no tienen propietario y que pueden ser apropiados por ocupación, como animales salvajes o recursos naturales en ciertas condiciones.',
     },
     {
-      termino: 'Temporalidad del usufructo',
+      termino: 'Títulos traslaticios de dominio',
       significado:
-        'Característica del usufructo que lo limita a un periodo específico, ya sea un plazo definido o vitalicio.',
+        'Documentos legales que sirven como base para transferir la propiedad, como contratos de compraventa, donación o permuta.',
     },
     {
-      termino: 'Servidumbres',
+      termino: 'Tradición',
       significado:
-        'Derechos reales que permiten al propietario de un bien (predio dominante) beneficiarse del uso de otro bien ajeno (predio sirviente).',
-    },
-    {
-      termino: 'Usufructo',
-      significado:
-        'Derecho real que otorga a una persona el uso y disfrute de un bien ajeno, respetando su esencia y devolviéndole al propietario al finalizar el usufructo.',
+        'Acto jurídico mediante el cual se transfiere la propiedad de un bien, ya sea mediante la entrega física, simbólica o registral.',
     },
     {
       termino: 'Usucapión',
       significado:
-        'Forma de prescripción adquisitiva que permite a una persona convertirse en propietario de un bien tras poseerlo pacífica y continuamente durante el tiempo exigido por la ley.',
-    },
-    {
-      termino: 'Vinculación jurídica',
-      significado:
-        'Relación legal que se establece entre una persona y un bien, como en los derechos reales, que permite su uso, disfrute o disposición.',
+        'Sinónimo de prescripción adquisitiva, es el proceso mediante el cual se adquiere la propiedad de un bien por posesión continuada durante un tiempo establecido por la Ley.',
     },
   ],
 }

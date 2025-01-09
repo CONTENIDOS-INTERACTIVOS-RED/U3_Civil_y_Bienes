@@ -1,173 +1,148 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'2. Usufructo'")
+  BannerInterno(:subTitulo="'2. Prescripción'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
+    p.mb-5 La prescripción adquisitiva o usucapión, es un mecanismo legal que permite a una persona adquirir el dominio de un bien después de haberlo poseído de forma continua, pacífica y pública, cumpliendo con las condiciones que establece la Ley.
 
-    .bg-color-1.mb-5(data-aos="fade-up")
-      .row.justify-content-center.align-items-center
-        .col-lg.p-4.px-5.mb-3(data-aos="fade-right")
-          p.mb-0 El usufructo es un derecho real que permite a una persona, conocida como usufructuario, usar y disfrutar de un bien ajeno, respetando su esencia y devolviéndolo al propietario, denominado nudo propietario, al finalizar el periodo estipulado por contrato o por la Ley. Este derecho se aplica tanto a bienes muebles como inmuebles, e incluso a derechos específicos o patrimonios completos. Un ejemplo común es cuando una persona puede vivir en una casa que no le pertenece, beneficiándose de ella sin tener el poder de venderla o hipotecarla.
-        .col-lg-auto(data-aos="fade-left")
-          figure
-            img(src='@/assets/curso/tema2/1.png', alt='')
+    h2.mb-5(data-aos="fade-right") Características principales
+
+    p.mb-5 La prescripción adquisitiva es un mecanismo jurídico que permite adquirir la propiedad de un bien mediante la posesión prolongada y continua, cumpliendo con ciertos requisitos establecidos por la Ley.
+
+    TabsC.color-primario.mb-5
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Propiedad" :icon="require('@/assets/bullets/icon-tab-c-4.svg')" )
+        .row.justify-content-center
+          .col-lg-7.col-xl-8.mb-4.mb-md-0.order-2
+            h4 Basada en el tiempo
+            p Requiere posesión continua por un periodo específico, definido por la Ley.
+        
+          .col-md-8.col-lg-5.col-xl-4.order-1.mb-3
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/1.png', alt='')
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Posesión" :icon="require('@/assets/bullets/icon-tab-c-4.svg')" )
+        .row.justify-content-center
+          .col-lg-7.col-xl-8.mb-4.mb-md-0.order-2
+            h4 Posesión pacífica  
+            p La posesión debe ejercerse sin conflictos o violencia.
+        
+          .col-md-8.col-lg-5.col-xl-4.order-1.mb-3
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/2.png', alt='')
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Propiedad" :icon="require('@/assets/bullets/icon-tab-c-4.svg')" )
+        .row.justify-content-center
+          .col-lg-7.col-xl-8.mb-4.mb-md-0.order-2
+            h4 Posesión pública
+            p La tenencia debe ser visible y reconocible por terceros.
+        
+          .col-md-8.col-lg-5.col-xl-4.order-1.mb-3
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/3.png', alt='')
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Posesión" :icon="require('@/assets/bullets/icon-tab-c-4.svg')" )
+        .row.justify-content-center
+          .col-lg-7.col-xl-8.mb-4.mb-md-0.order-2
+            h4 Clasificación  
+            p Se divide en prescripción <b>ordinaria</b> (con buena fe y justo título) y <b>extraordinaria</b> (sin estos requisitos).
+        
+          .col-md-8.col-lg-5.col-xl-4.order-1.mb-3
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/4.png', alt='')
     
+    .titulo-figura.mb-4
+      h5 Tabla 3. 
+      span Tipos de prescripción adquisitiva  
+
+    .tabla-a.color-terciario.mb-5(data-aos="zoom-in") 
+      table
+        thead
+          tr
+            th.bg-color-4 Tipo
+            th.bg-color-4 Requisitos
+            th.bg-color-4 Tiempo requerido
+            th.bg-color-4 Aplicación principal
+        tbody
+          tr.bg-color-5
+            td <b>Ordinaria</b>
+            td Buena fe y justo título.
+            td 5 años
+            td Bienes muebles e inmuebles con apariencia de derecho.
+            
+          tr.bg-color-5
+            td <b>Extraordinaria</b> 
+            td Posesión continua, pacífica y pública.
+            td 10 años
+            td Principalmente inmuebles sin título formal.
+
+    .bg-full-width.bg-fondo-1
+      .px-4.px-md-5.pb-md-3
+        h2.mb-5(data-aos="fade-right") Regulación en Colombia
+
+        p.mb-5 La prescripción adquisitiva es un mecanismo jurídico que permite adquirir la propiedad de un bien mediante la posesión prolongada y continua, cumpliendo con ciertos requisitos establecidos por la Ley.
+
+        .row.justify-content-center.align-items-stretch.mb-5
+          .col-lg-4.mb-4(data-aos="zoom-in-up")
+            .custom-image-card-2.h-100
+              img.custom-image-card__image(src="@/assets/curso/tema2/5.png" alt="")
+              .custom-image-card__text.p-4
+                h5.mb-3.text-center Marco legal
+                p.mb-0 Regulado por el Código Civil, establece las condiciones y procedimientos para que el poseedor pueda adquirir el dominio de un bien.
+          .col-lg-4.mb-4(data-aos="zoom-in-down")
+            .custom-image-card-2.h-100
+              img.custom-image-card__image(src="@/assets/curso/tema2/6.png" alt="")
+              .custom-image-card__text.p-4
+                h5.mb-3.text-center Proceso judicial
+                p.mb-0 El poseedor debe demostrar ante un juez, que ha cumplido con los requisitos de la prescripción para obtener el reconocimiento legal.    
+          .col-lg-4.mb-4(data-aos="zoom-in-down")
+            .custom-image-card-2.h-100
+              img.custom-image-card__image(src="@/assets/curso/tema2/7.png" alt="")
+              .custom-image-card__text.p-4
+                h5.mb-3.text-center Función social de la propiedad
+                p.mb-0 Según el Artículo 58 de la Constitución Política de Colombia, la propiedad debe cumplir una función social, justificando este mecanismo en casos de abandono de bienes.      
+            
+    h3.mb-5(data-aos="fade-right") Ejemplo práctico
+
+    p.mb-5 Pedro posee una finca durante 12 años de forma pacífica, continua y pública, sin que el propietario original reclame su derecho. Al cumplir con los requisitos, Pedro puede iniciar un proceso judicial para obtener el dominio por <b>prescripción extraordinaria</b>. Si hubiera tenido un documento de compraventa imperfecto y buena fe, podría haber solicitado el dominio por <b>prescripción ordinaria</b> tras 6 años de posesión.
+
+    h2.mb-5(data-aos="fade-right") Importancia de la prescripción
+
+    p.mb-5 La prescripción adquisitiva es un instrumento clave para garantizar la estabilidad patrimonial y promover el aprovechamiento de los bienes en beneficio de la sociedad.
+
     .bg-full-width.bg-fondo-slider.mb-5
       .p-4.p-md-5
         SlyderA(tipo="b").bg-white(data-aos="flip-up")
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
-                img(src="@/assets/curso/tema2/2.png")
+                img(src="@/assets/curso/tema2/8.png")
             .col-lg-7
-              h5 Temporalidad
-              p El usufructo tiene una duración limitada, ya sea por un periodo específico o de manera vitalicia, al término de la cual, el bien regresa al nudo propietario. 
-              p <b>Ejemplo:</b> un usufructo sobre una vivienda por 15 años, permite al usufructuario disfrutar de ella durante ese tiempo, debiendo devolverla al propietario, al finalizar el tiempo definido.
+              h5 Estabilidad patrimonial 
+              p Regulariza la tenencia de bienes y promueve la seguridad jurídica.
+               
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
-                img(src="@/assets/curso/tema2/3.png")
+                img(src="@/assets/curso/tema2/9.png")
             .col-lg-7
-              h5 Frutos del bien
-              p El usufructuario tiene derecho a percibir los frutos naturales, industriales o civiles, generados por el bien, respetando su esencia. 
-              p <b>Ejemplo:</b> un usufructo sobre una finca permite al usufructuario beneficiarse de las cosechas, mientras no altere el uso agrícola del terreno.
+              h5 Aprovechamiento de bienes
+              p Evita el abandono y fomenta el uso productivo de los bienes en beneficio de la sociedad.
+               
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
-                img(src="@/assets/curso/tema2/4.png")
+                img(src="@/assets/curso/tema2/10.png")
             .col-lg-7
-              h5 Limitación en la disposición
-              p El usufructuario no puede vender, hipotecar ni modificar el bien sin autorización, pero puede ceder su derecho de usufructo a terceros. 
-              p <b>Ejemplo:</b> un usufructuario puede arrendar un apartamento objeto del usufructo, pero no puede venderlo.
+              h5 Inclusión económica
+              p Facilita la integración de bienes sin título formal al sistema jurídico y económico.
+               
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
-                img(src="@/assets/curso/tema2/5.png")
+                img(src="@/assets/curso/tema2/11.png")
             .col-lg-7
-              h5 Conservación del bien
-              p El usufructuario debe realizar reparaciones ordinarias y mantener el bien en buen estado, mientras que el propietario se encarga de las reparaciones mayores.
-              p <b>Ejemplo:</b> si un usufructo recae sobre un apartamento, el usufructuario debe cubrir los costos de pintura o cambio de griferías, pero no de reparaciones estructurales.
+              h5 Relevancia en áreas rurales
+              p Permite que poseedores de terrenos sin títulos formales en zonas rurales, puedan adquirir su dominio.
+      
+    p.mb-5 La prescripción adquisitiva no solo promueve la estabilidad en las relaciones patrimoniales, sino que también respalda la inclusión social y económica de quienes han poseído bienes de forma legítima, especialmente en zonas rurales de Colombia.
 
-          .row.p-4.p-md-5
-            .col-lg-5.mb-3
-              figure
-                img(src="@/assets/curso/tema2/6.png")
-            .col-lg-7
-              h5 Reversibilidad
-              p Al finalizar el usufructo, el bien regresa al nudo propietario en condiciones similares a las originales, salvo deterioros naturales por el uso permitido. 
-              p <b>Ejemplo:</b> un usufructuario que dañó el inmueble, está obligado a repararlo antes de devolverlo al propietario.
-    
-    .bg-full-width.bg-fondo-1
-      .px-4.px-md-5.pb-md-3
-
-        h2.mb-5(data-aos="fade-right") Regulación en Colombia
-
-        p.mb-5 En el marco legal colombiano, el usufructo está regulado por los Artículos 823 y siguientes, del Código Civil. Este derecho puede constituirse de diversas formas:
-
-        div.row.justify-content-center.align-items-stretch.mb-5
-          div.col-lg-4.mb-4(data-aos="zoom-in-up")
-            div.bg-ppal-azul.box-shadow.px-4.py-5.h-100.tarjeta
-              img.mx-auto.d-block.mb-4(
-                src="@/assets/curso/tema2/7.svg"
-                alt=""
-                style="width: 90px"
-              )
-              p.text-center.text-bold Usufructo legal
-              p.mb-0.text-center Surge por disposición de la ley en situaciones específicas.
-              p.text-center <b><b>Ejemplo:</b></b> los padres tienen el usufructo de los bienes de sus hijos menores, según el Artículo 253 del Código Civil.
-
-          
-          div.col-lg-4.mb-4(data-aos="zoom-in-up")
-            div.bg-ppal-azul.box-shadow.px-4.py-5.h-100.tarjeta
-              img.mx-auto.d-block.mb-4(
-                src="@/assets/curso/tema2/8.svg"
-                alt=""
-                style="width: 90px"
-              )
-              p.text-center.text-bold Usufructo voluntario
-              p.mb-0.text-center Se establece mediante contrato o testamento, especificando las condiciones y duración del derecho.
-              p.text-center <b><b>Ejemplo:</b></b> un testador otorga el usufructo vitalicio de una vivienda a su cónyuge, mientras que los hijos reciben la nuda propiedad.
-
-          
-          div.col-lg-4.mb-4(data-aos="zoom-in-up")
-            div.bg-ppal-azul.box-shadow.px-4.py-5.h-100.tarjeta
-              img.mx-auto.d-block.mb-4(
-                src="@/assets/curso/tema2/9.svg"
-                alt=""
-                style="width: 90px"
-              )
-              p.text-center.text-bold Usufructo por prescripción
-              p.mb-0.text-center Se adquiere mediante posesión prolongada y pacífica con ánimo de usufructuario, cumpliendo requisitos legales.
-              p.text-center <b><b>Ejemplo:</b></b> una persona que ha usufructuado un terreno por más de 10 años, podría regularizar su derecho si se cumplen las condiciones legales
-
-    p.mb-5 El usufructo puede recaer sobre diferentes tipos de bienes, como viviendas, terrenos, cuentas de inversión o colecciones de arte. Sin importar el objeto, el usufructuario tiene la obligación de respetar la naturaleza del bien y garantizar su adecuada conservación.
-
-    .row.mb-5.justify-content-center
-      .col-lg-10
-        .titulo-figura.mb-4
-          h5 Tabla 3. 
-          span Obligaciones del usufructuario y del propietario 
-
-        .tabla-a.color-terciario.mb-5(data-aos="zoom-in") 
-          table
-            thead
-              tr
-                th.bg-color-4 Obligaciones del usufructuario
-                th.bg-color-4 Obligaciones del propietario
-            tbody
-              tr.bg-color-5
-                td Mantener el bien en buen estado y realizar reparaciones ordinarias.
-                td Realizar reparaciones extraordinarias necesarias para conservar el bien.
-                
-              tr.bg-color-5
-                td Respetar la naturaleza y el destino del bien, evitando alteraciones.
-                td No interferir en el disfrute del usufructuario mientras este cumpla con sus obligaciones.
-              
-              tr.bg-color-5
-                td Restituir el bien en condiciones originales o pactadas al término del usufructo.
-                td Garantizar que el usufructuario pueda ejercer su derecho de manera plena y pacífica.
-                
-    h2.mb-5(data-aos="fade-right") Extinción del usufructo
-
-    p.mb-5 El usufructo puede terminar por diversas razones, establecidas en el Artículo 866 del Código Civil:
-    
-    .row.mb-5.justify-content-center
-      .col-md-6.col-lg-5.mb-3.col-xl-3(data-aos="fade-up")
-        figure
-          img(src="@/assets/curso/tema2/10-1.svg")
-      .col-md-6.col-lg-5.mb-3.col-xl-3(data-aos="fade-down")
-        figure
-          img(src="@/assets/curso/tema2/10-2.svg")
-      .col-md-6.col-lg-5.mb-3.col-xl-3(data-aos="fade-up")
-        figure
-          img(src="@/assets/curso/tema2/10-3.svg")
-      .col-md-6.col-lg-5.mb-3.col-xl-3(data-aos="fade-down")
-        figure
-          img(src="@/assets/curso/tema2/10-4.svg")
-
-
-    h2.mb-5(data-aos="fade-right") Usufructo como herramienta jurídica versátil
-
-    p.mb-5 El usufructo tiene aplicaciones prácticas significativas, en diversos contextos:
-
-    .row.mb-5.justify-content-center
-      .col-md-8.col-lg-3.mb-3(data-aos="flip-right")
-        figure
-          img(src="@/assets/curso/tema2/11.png")
-      .col-lg-3.mb-3(data-aos="flip-left")
-        div.h-100.bg-color-1.p-4.tarjeta.mb-3
-          p #[strong Protección habitacional]
-          p.mb-0 Permite que una persona, como un cónyuge sobreviviente, pueda seguir viviendo en una vivienda sin ser propietario.
-      .col-lg-3.mb-3(data-aos="flip-right")
-        div.h-100.bg-color-1.p-4.tarjeta.mb-3
-          p #[strong Explotación económica]
-          p.mb-0 Facilita el uso productivo de bienes agrícolas o inmuebles, garantizando un equilibrio entre disfrute y conservación.
-      .col-lg-3.mb-3(data-aos="flip-left")
-        div.h-100.bg-color-1.p-4.tarjeta.mb-3
-          p #[strong Planificación sucesoria]
-          p.mb-0 Ofrece opciones para dividir derechos entre usufructuarios y nudo propietarios, optimizando la transferencia de bienes.
-
-    p.mb-5 El usufructo en Colombia, representa una herramienta legal flexible y equilibrada que armoniza los intereses del usufructuario y del propietario, fomentando el uso productivo de los bienes y protegiendo los derechos de propiedad a largo plazo.
 
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
@@ -178,18 +153,18 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/115048" target="_blank" rel="noopener noreferrer") Larrea Holguín, J. (2008). Manual elemental de Derecho Civil 3. Volumen 5: el usufructo, derechos de uso y habitación, patrimonio familiar y las servidumbres. Corporación de Estudios y Publicaciones. 
+              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/78849" target="_blank" rel="noopener noreferrer") Belmaña Juárez, J. (2014). Derechos reales, manual de la posesión: notas de clases, jurisprudencia. Alveroni Ediciones.  
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.enciclopedia-juridica.com" target="_blank" rel="noopener noreferrer") Enciclopedia Jurídica. (2020). Usufructo. 
+              a(href="https://www.minvivienda.gov.co/sites/default/files/procesos/gpv-p-10-transferencia-de-dominio-de-bienes-inmuebles-art-10-7.0.pdf " target="_blank" rel="noopener noreferrer") GPV-P-10 Transferencia de dominio de bienes inmuebles en cumplimiento de los compromisos derivados de los extintos ICT - INURBE 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.lexisnexis.com/en-us/gateway.page" target="_blank" rel="noopener noreferrer") Orientaciones sobre analisis de bienes 
+              a(href="https://kirasystems.com/" target="_blank" rel="noopener noreferrer") Inteligencia artificial para analizar y extraer información clave de contratos y documentos legales 
             
 
             p.d-flex.my-4
               img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.youtube.com/watch?v=U5dUoafXnZk" target="_blank" rel="noopener noreferrer") David Jiménez - Abogado Experto en Herencias. (2021). USUFRUCTO. ¿Qué es y cómo funciona?.
+              a(href="https://www.youtube.com/watch?v=2FazgGbamw4" target="_blank" rel="noopener noreferrer") Asocapitales. (2021). Webinar de transferencia de bienes inmuebles 
 
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure

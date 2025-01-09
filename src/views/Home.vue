@@ -22,9 +22,7 @@
             .content-wrapper.px-lg-4.pt-lg-4.px-xxl-5.py-xxl-5.text-start
               p.home-main-title UNIDAD {{ `${globalData.numeroUnidad}` }}
               h1.home-title.mb-4 {{ globalData.tituloUnidad }}
-              p.descripcion.mb-4 Los derechos reales en el derecho civil, como propiedad, posesión, usufructo y servidumbres, regulan la relación entre personas y bienes, garantizando su uso, disfrute y transferencia. La propiedad otorga control pleno sobre un bien, mientras que la posesión implica una relación de hecho con potencial de convertirse en propiedad, mediante prescripción. El usufructo permite usar un bien ajeno respetando su esencia, y las servidumbres facilitan el acceso y servicios entre predios. Estas figuras promueven seguridad jurídica, desarrollo social y equilibrio entre intereses individuales y colectivos, en Colombia.
-              
-              p #[b Los sueños se construyen sobre derechos sólidos que impulsan el desarrollo y la equidad.]
+              p.descripcion.mb-4 La transferencia de bienes, implica el cambio de titularidad mediante actos voluntarios o legales, garantizando la seguridad jurídica en las transacciones. La protección de bienes asegura derechos de propiedad a través de mecanismos como acciones reivindicatorias y posesorias. Los modos de adquirir el dominio incluyen: tradición, ocupación, accesión y prescripción, regulando la obtención legítima de bienes. Los contratos traslativos formalizan la transferencia de propiedad, y las acciones reivindicatorias y posesorias, protegen la posesión y la propiedad, frente a conflictos, promoviendo estabilidad y justicia en las relaciones patrimoniales.
 
               .button-container.mt-auto
                 router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")

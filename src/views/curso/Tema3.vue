@@ -1,100 +1,199 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'3. Servidumbres: constitución y extinción'")
+  BannerInterno(:subTitulo="'3. Contratos traslativos de dominio'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
-    .bg-color-1
-      .row.mb-5.align-items-center
-        .col-lg-7.mb-3
-          p.mb-0.p-4.px-5 Las servidumbres son derechos reales que otorgan a un predio (dominante) un beneficio sobre otro (sirviente), limitando parcialmente la propiedad de este último. Reguladas por el Código Civil Colombiano, se constituyen para garantizar necesidades de acceso, servicios o convivencia entre propietarios.
-        .col-lg-5(data-aos="flip-left")
-          figure
-            img(src="@/assets/curso/tema3/1.png")  
-      
-    h2.mb-5(data-aos="fade-right") Constitución
+    .row.justify-content-center.mb-5(data-aos="fade-up")
+      .col-lg-7.mb-3
+        p.mb-0 Los contratos traslativos de dominio, son acuerdos legales mediante los cuales una persona, denominada enajenante, transfiere la propiedad de un bien a otra persona, denominada adquirente, a cambio de una contraprestación o de manera gratuita. Estos contratos tienen como principal objetivo, cambiar la titularidad del dominio de un bien, ya sea de manera temporal o permanente, y están regulados por principios básicos del derecho civil, como el consentimiento, la capacidad de las partes y la licitud del objeto.
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema3/1.png', alt='')
+    
+    .row.align-items-center.bg-ppal-azul.p-4.mb-5
+      .col-lg-auto(data-aos="fade-right")
+        img(src="@/assets/curso/tema3/2.svg", style="max-width: 90px").mx-auto
+      .col-lg.mb-3
+        p.mb-0 Estos contratos son fundamentales en la vida jurídica y económica, puesto que permiten la transferencia formal de la propiedad, asegurando la protección de los derechos, tanto del enajenante como del adquirente. Además, son esenciales para garantizar la seguridad jurídica en las transacciones y evitar conflictos de titularidad.
+    
+    h2.mb-3(data-aos="fade-right") ¿Cuáles son los contratos traslativos de dominio?
 
-    p.mb-5 La analítica tiene aplicaciones prácticas que optimizan procesos y respaldan decisiones estratégicas en sectores como comercio, marketing y finanzas.
+    p.mb-5 Existen diversos tipos de contratos traslativos de dominio, entre los cuales destacan los siguientes:
+
+   
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-6
+        TarjetaAudio.color-primario.bg-color-white.mb-3(
+          texto="Proceso de descarga de MySQL Server Community y MySQL Workbench"
+          tiempo
+          :audio="require('../../assets/curso/podcast/podcast1.mp3')"
+        )
+    
+    h2.mb-5(data-aos="fade-right") ¿Cuándo se aplican los contratos traslativos de dominio?
+
+    p.mb-5 Los contratos traslativos de dominio se aplican en diversas situaciones donde las partes buscan formalizar legalmente la transferencia de bienes, asegurando su protección bajo la normativa vigente. Estos contratos son esenciales para garantizar la seguridad jurídica en las transacciones patrimoniales.
 
     .bg-full-width.bg-fondo-slider.mb-5
       .p-4.p-md-5
-        SlyderA(tipo="b").bg-white(data-aos="zoom-in")
-          .row.p-4.p-md-5
-            .col-lg-5.mb-3
-              figure
-                img(src="@/assets/curso/tema3/2.png")
-            .col-lg-7
-              h5 Por ley
-              p Impuestas automáticamente para garantizar derechos fundamentales o utilidad pública. 
-              p <b>Ejemplo:</b> servidumbre de paso para predios sin acceso a vías públicas.
-
+        SlyderA(tipo="b").bg-white(data-aos="flip-up")
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
                 img(src="@/assets/curso/tema3/3.png")
             .col-lg-7
-              h5 Por contrato
-              p Acuerdo entre partes formalizado en escritura pública. 
-              p <b>Ejemplo:</b> instalación de tuberías a cambio de compensación económica
-
+              h5 Transacciones comerciales 
+              p Compraventa de bienes inmuebles, vehículos o productos industriales.
+               
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
                 img(src="@/assets/curso/tema3/4.png")
             .col-lg-7
-              h5 Por prescripción
-              p Uso continuo y pacífico del bien ajeno por el tiempo exigido por ley. 
-              p <b>Ejemplo:</b> camino utilizado durante años para acceder a un terreno.
-
+              h5 Transmisión gratuita de bienes
+              p Cesión sin beneficio económico, como en las donaciones.
+               
           .row.p-4.p-md-5
             .col-lg-5.mb-3
               figure
                 img(src="@/assets/curso/tema3/5.png")
             .col-lg-7
-              h5 Por destino del propietario
-              p Surge al dividir un terreno, creando una necesidad entre los predios. 
-              p <b>Ejemplo:</b> predio vendido con una servidumbre de paso para su acceso.
-
-    h2.mb-5(data-aos="fade-right") Extinción
-
-    p.mb-5 La extinción de servidumbres ocurre por diversas razones legales y prácticas, dependiendo de las circunstancias.
-
-    .row.align-items-start.mb-5
-      .col-lg-4.order-2(data-aos="fade-right")
-        figure
-          img(src="@/assets/curso/tema3/6.png", alt="").mb-4.mb-lg-0
-      .col-lg-8.order-1(data-aos="fade-left")
-        AcordionA(tipo="b")
-          .div(titulo="Renuncia")
-            p El propietario del predio dominante renuncia al derecho. 
-            p <b>Ejemplo:</b> un predio obtiene acceso directo a una vía pública.
-          .div(titulo="Confusión")
-            p Ambos predios pasan a ser propiedad de la misma persona. 
-            p <b>Ejemplo:</b> el propietario compra el predio sirviente.
-          .div(titulo="Destrucción del predio")
-            p El predio sirviente o dominante desaparece. 
-            p <b>Ejemplo:</b> camino destruido por un deslizamiento.
-          .div(titulo="Cumplimiento del plazo")
-            p Finalización del plazo o condición pactada en el contrato. 
-            p <b>Ejemplo:</b> servidumbre temporal para un proyecto eléctrico.
-          .div(titulo="Prescripción extintiva")
-            p Falta de uso durante el tiempo establecido por la ley. 
-            p <b>Ejemplo:</b> no se usa una servidumbre de paso en 10 años.
+              h5 Intercambio de bienes
+              p Permuta de bienes entre dos partes.
+               
+          .row.p-4.p-md-5
+            .col-lg-5.mb-3
+              figure
+                img(src="@/assets/curso/tema3/6.png")
+            .col-lg-7
+              h5 Préstamos de bienes fungibles
+              p Transferencia temporal de bienes consumibles, como dinero u otros bienes fungibles.
     
-    h2.mb-5(data-aos="fade-right") Características
+    
+    h2.mb-5(data-aos="fade-right") Requisitos para su validez
 
-    p.mb-5 Las servidumbres son <b>accesorias</b> (vinculadas a los predios), <b>indivisibles</b> (el derecho beneficia a todo el predio dominante) y, en general, <b>perpetuas</b>, salvo acuerdo contrario. Promueven la cooperación entre propietarios y garantizan el uso eficiente de los bienes inmuebles.
+    p.mb-5 Los requisitos para la validez de un contrato, garantizan que los acuerdos entre las partes cumplan con los principios legales y éticos necesarios para su ejecución.
 
-    div.bg-color-7.p-4.mb-5(data-aos="zoom-in")
-      p.text-bold Importancia
-      p.mb-0 Las servidumbres son herramientas jurídicas esenciales para resolver necesidades de acceso y uso entre predios vecinos, promoviendo el desarrollo urbano y rural en equilibrio con los derechos de los propietarios.
+    .row.justify-content-center.mb-5.align-items-center(data-aos="fade-up")
+      .col-lg-8
+        div.bg-ppal-azul.p-4.px-5.h-100.align-content-center
+          ul.lista-ul(data-aos="fade-left")
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Consentimiento de las partes:</b> ambas partes deben manifestar su voluntad de forma libre y clara.
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Objeto del contrato:</b> debe ser lícito, susceptible de ser poseído y comercializado.
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Capacidad jurídica: </b> las partes involucradas deben contar con la capacidad legal para contratar.
+          
+          p.text-bold Formalidades específicas:
+
+          ul.lista-ul.mb-0(data-aos="fade-left")
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Para bienes muebles:</b>  acuerdo de las partes y entrega del bien (tradición).
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Para bienes inmuebles:</b>  escritura pública y la inscripción en el Registro de Instrumentos Públicos.
+
+      .col-lg-4
+        figure
+          img(src='@/assets/curso/tema3/7.png', alt='')
+    
+    .titulo-figura.mb-4
+      h5 Tabla 4. 
+      span Tipos de contratos traslativos de dominio  
+
+    .tabla-a.color-terciario.mb-5(data-aos="zoom-in") 
+      table
+        thead
+          tr
+            th(width="25%").bg-color-4 Tipo de contrato
+            th.bg-color-4 Regulación
+            th.bg-color-4 Aspectos relevantes
+        tbody
+          tr.bg-color-5
+            td <b>Compraventa</b>
+            td Artículos 1849 y siguientes del CC.
+            td Requiere claridad en el precio y condiciones de entrega del bien.
+            
+          tr.bg-color-5
+            td <b>Donación</b> 
+            td Artículos 1443 y siguientes del CC.
+            td Escritura pública necesaria para bienes inmuebles.
+          tr.bg-color-5
+            td <b>Permuta</b> 
+            td Artículos 1955 y siguientes del CC.
+            td Intercambio de bienes con reglas similares a las de compraventa.
+          tr.bg-color-5
+            td <b>Mutuo</b> 
+            td Artículos 2221 y siguientes del CC.
+            td Aplicable a bienes fungibles, establece obligaciones claras de devolución.
+    
+    .bg-full-width.bg-fondo-1
+      .px-4.px-md-5.pb-md-3
+
+        h2.mb-5(data-aos="fade-right") Aspectos legales en Colombia
+
+        p.mb-5 Los contratos traslativos de dominio están regulados por el <b>Código Civil</b> y el <b>Código de Comercio</b>, dependiendo del tipo de bien y la naturaleza de la transacción. Además, deben respetar principios constitucionales como:
+
+        div.row.justify-content-center.align-items-stretch.mb-5
+          div.col-lg-3.mb-4(data-aos="zoom-in-up")
+            div.bg-color-white.box-shadow.px-4.py-5.h-100.tarjeta
+              img.mx-auto.d-block.mb-4(
+                src="@/assets/curso/tema3/8.svg"
+                alt=""
+                style="width: 90px"
+              )
+              p.text-center <b>Función social de la propiedad</b> (Art. 58 de la Constitución).
 
           
+          div.col-lg-3.mb-4(data-aos="zoom-in-up")
+            div.bg-color-white.box-shadow.px-4.py-5.h-100.tarjeta
+              img.mx-auto.d-block.mb-4(
+                src="@/assets/curso/tema3/9.svg"
+                alt=""
+                style="width: 90px"
+              )
+              p.text-center <b>Equidad contractual</b> (Art. 333 de la Constitución).
+    
+    p.mb-5 Formalidades según el tipo de bien, son: 
 
-    .bg-full-width.border-top.actividad.bg-color-actividad
-      .p-4.p-md-5
-        #Actividad                
-          <Actividad :cuestionario="cuestionario"/>
+    .bg-color-1.mb-5(data-aos="fade-up")
+      .row.justify-content-center.align-items-center
+        .col-lg.p-4.px-5.mb-3
+          ul.lista-ul.mb-0(data-aos="fade-left")
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Bienes muebles.</b>   Acuerdo entre las partes y entrega del bien (tradición).
+            li.mb-0.d-flex
+              i.lista-ul__vineta
+              p.mb-0 <b>Bienes inmuebles. </b>  Escritura pública e inscripción en la Oficina de Registro de Instrumentos Públicos.
+        .col-lg-auto
+          figure
+            img(src='@/assets/curso/tema3/10.png', alt='')
+    
+    p.text-bold.mb-5 La importancia de estos contratos se fundamenta en que: 
 
+    .row.mb-5
+      .col-lg-3(data-aos="flip-down")
+        figure
+          img(src='@/assets/curso/tema3/11.png', alt='')
+      .col-lg-3(data-aos="flip-up")
+        div.p-4.bg-color-white.h-100.align-content-center.tarjeta.borderfull
+          p.mb-0 Garantizan la <b>transparencia y legalidad</b> en las transferencias patrimoniales.
+      .col-lg-3(data-aos="flip-down")
+        div.p-4.bg-color-white.h-100.align-content-center.tarjeta.borderfull
+          p.mb-0 Fortalecen la <b>seguridad jurídica</b> y protegen los derechos de las partes.
+      .col-lg-3(data-aos="flip-up")
+        div.p-4.bg-color-white.h-100.align-content-center.tarjeta.borderfull
+          p.mb-0 Contribuyen al bienestar social, respetando los principios constitucionales.
+    
+    p.mb-5 En conclusión, los contratos traslativos de dominio en Colombia, son herramientas fundamentales para formalizar y garantizar la transferencia de bienes bajo un marco de equidad y legalidad. Desde transacciones comerciales, hasta donaciones, estos contratos fortalecen la seguridad en las relaciones patrimoniales y jurídicas.
+
+    
+            
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
         h2(data-aos="fade-left") MATERIAL COMPLEMENTARIO
@@ -104,19 +203,19 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/117630" target="_blank" rel="noopener noreferrer") Medina Pabón, J. E. (2019). Derecho Civil. Bienes. Derechos reales (2 ed.). Editorial Universidad del Rosario.
+              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/117630" target="_blank" rel="noopener noreferrer") Medina Pabón, J. E. (2019). Derecho Civil. Bienes. Derechos reales (2 ed.). Editorial Universidad del Rosario. 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://blogs.ugto.mx/derecho/presentacion-derechos-de-los-usufructuarios/" target="_blank" rel="noopener noreferrer") Universidad de Guanajuato. (2021). Derechos de los usufructuarios (blog). 
+              a(href="https://www.minjusticia.gov.co/programas-co/LegalApp/Paginas/Declaraci%C3%B3n-de-pertenencia.aspx#:~:text=%2D%20Prescripci%C3%B3n%20adquisitiva%20ordinaria:%20Para%20los,impuestos%20y%20mantenimiento%20del%20bien)." target="_blank" rel="noopener noreferrer") ¿Cómo me puedo convertir en dueño de un predio sobre el cual he habitado hace mucho tiempo? 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://aplicaciones.ai/casetext/" target="_blank" rel="noopener noreferrer") Derecho público y privado  
+              a(href="https://www.thomsonreuters.cl/es-cl/productos/informacion-legal-westlaw " target="_blank" rel="noopener noreferrer") Plataforma sobre gestión básica del derecho 
 
            
 
             p.d-flex.my-4
               img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.youtube.com/watch?v=ntcz89ZdgWo" target="_blank" rel="noopener noreferrer") Jurídicamente. (2023). USUFRUCTO VITALICIO.
+              a(href="https://www.youtube.com/watch?v=ev6qJ2kPwbQ" target="_blank" rel="noopener noreferrer") Mario Varela Law Firm. (2023). Protección de tus bienes.
 
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
@@ -125,183 +224,8 @@
 </template>
 
 <script>
-import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema3',
-  components: {
-    Actividad,
-  },
-  data() {
-    return {
-      cuestionario: {
-        tema: 'Herramientas colaborativas para la construcción de paz',
-        titulo: 'Ponte a prueba',
-        introduccion:
-          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
-        barajarPreguntas: true,
-        preguntas: [
-          {
-            id: 1,
-            texto:
-              '¿Cuál de las siguientes es una característica fundamental de los derechos humanos?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Son temporales y cambiantes',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Son universales y aplican a todas las personas',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Son exclusivos de ciertos grupos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Son opcionales',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 2,
-            texto:
-              '¿Cuál de las siguientes afirmaciones sobre la diversidad cultural es correcta?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Fomenta la homogeneización cultural',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Promueve el respeto y la aceptación de las diferencias',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Debilita la identidad cultural de los pueblos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Limita las oportunidades de interacción',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 3,
-            texto:
-              'La mediación en un conflicto tiene como objetivo principal:',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Imponer una solución rápida',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Facilitar el diálogo entre las partes',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Determinar la culpabilidad',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar las preocupaciones de una parte',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 4,
-            texto: 'En un foro comunitario, es importante:',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Escuchar solo a las autoridades',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Fomentar la participación de todos los miembros',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Decidir por votación sin consultar a los demás',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Excluir las opiniones de los más jóvenes',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 5,
-            texto:
-              '¿Qué busca la justicia restaurativa en el contexto de un conflicto?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Aplicar una sanción severa',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Reparar el daño y restablecer las relaciones',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Castigar a las partes involucradas',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar el contexto del conflicto',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-        ],
-        mensaje_final_aprobado:
-          '¡Felicidades! Has superado la prueba con éxito.',
-        mensaje_final_reprobado:
-          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
-      },
-    }
-  },
+  name: 'Tema2',
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -310,7 +234,4 @@ export default {
 }
 </script>
 
-<style lang="sass">
-.bg-color-actividad
-  background-color: #EBF1F5
-</style>
+<style lang="sass"></style>
