@@ -73,13 +73,13 @@
         figure
           img(src='@/assets/curso/tema4/3.png', alt='')
     
-    h2.mb-5(data-aos="fade-right") Marco jurídico colombiano
-
-    p.mb-5 La acción reivindicatoria está regulada por:
+    
 
     .bg-full-width.bg-fondo-1
-      .px-4.px-md-5.pb-md-3
+      .px-4.mb-5.px-md-5.pb-md-3
+        h2.mb-5(data-aos="fade-right") Marco jurídico colombiano
 
+        p.mb-5 La acción reivindicatoria está regulada por:
         div.row.justify-content-center.align-items-stretch.mb-5
           div.col-lg-6.mb-4(data-aos="zoom-in-up")
             div.bg-color-white.box-shadow.px-4.py-5.h-100.tarjeta
@@ -88,7 +88,7 @@
                 alt=""
                 style="width: 90px"
               )
-              p.text-center.text-bold Código Civil
+              p.text-center.text-bold.mb-5 Código Civil
               p.mb-0.text-center Artículos 946 y siguientes, que definen el derecho de propiedad y los lineamientos de reivindicación.
 
           
@@ -99,9 +99,10 @@
                 alt=""
                 style="width: 90px"
               )
-              p.text-center.text-bold  Código General del Proceso
+              p.text-center.text-bold.mb-5  Código General del Proceso
               p.mb-0.text-center Especifica las etapas judiciales para la restitución del bien.
-                
+    
+    
     p.mb-5 Este mecanismo fortalece la seguridad jurídica y protege los derechos reales, siendo esencial para garantizar el control legítimo de los bienes.
 
     h2.mb-5(data-aos="fade-right") Acción posesoria
