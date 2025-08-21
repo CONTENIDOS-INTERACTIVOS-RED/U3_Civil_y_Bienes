@@ -62,10 +62,6 @@
             td Adquisición de bienes como resultado de un proceso natural o humano, como la incorporación de mejoras.
             td Regulada desde el Derecho Romano; hoy aplica especialmente en inmuebles o bienes agrícolas.
              
-          tr.bg-color-5
-            td <b>Prescripción</b> 
-            td Adquisición de bienes mediante la posesión pacífica y continuada, por un tiempo determinado.
-            td Evolucionó para proteger a los poseedores de buena fe y evitar conflictos prolongados sobre la propiedad.
 
     h2.mb-5(data-aos="fade-right") Ejemplos históricos y contemporáneos
 
@@ -132,7 +128,7 @@
                   p.mb-0 Reconocimiento de la propiedad colectiva para comunidades indígenas y afrodescendientes (Ley 70 de 1993). 
                 li.mb-0.d-flex
                   i.lista-ul__vineta
-                  p.mb-0 <b>Ejemplo:</b> Titulación de tierras colectivas en zonas rurales, para preservar la cultura y el bienestar comunitario.
+                  p.mb-0 <b>Ejemplo:</b> titulación de tierras colectivas en zonas rurales, para preservar la cultura y el bienestar comunitario.
                
                
           .row.p-4.p-md-5
@@ -305,7 +301,7 @@
                 img(src="@/assets/curso/tema1/18.png")
             .col-lg-7
               h5 Origen de la incorporación
-              Puede ser natural (fenómenos naturales) o artificial (intervención humana).
+              p Puede ser natural (fenómenos naturales) o artificial (intervención humana).
                
           .row.p-4.p-md-5
             .col-lg-5.mb-3

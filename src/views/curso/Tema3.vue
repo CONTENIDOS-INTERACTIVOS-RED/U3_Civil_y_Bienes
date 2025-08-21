@@ -24,7 +24,7 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-6
         TarjetaAudio.color-primario.bg-color-white.mb-3(
-          texto="Proceso de descarga de MySQL Server Community y MySQL Workbench"
+          texto="Contratos traslativos de dominio"
           tiempo
           :audio="require('../../assets/curso/podcast/podcast1.mp3')"
         )

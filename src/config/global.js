@@ -140,7 +140,7 @@ export default {
     {
       termino: 'Compraventa',
       significado:
-        'Contrato traslativo de dominio en el que una parte (vendedor) transfiere la propiedad de un bien a otra (comprador) a cambio de un precio',
+        'Contrato traslativo de dominio en el que una parte (vendedor) transfiere la propiedad de un bien a otra (comprador) a cambio de un precio.',
     },
     {
       termino: 'Dominio',
